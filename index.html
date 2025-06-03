@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Base con CSS Externo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="Logo de Ecolibreta">
+    <h1>Ecolibreta: Innovación Sustentable en Papelería</h1>
+</header>
+
+    <main>
+        <div class="columna-central">
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-button" data-target="contenido-inicio">Inicio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-button">Conócenos</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="submenu-item" data-target="contenido-empresa">Nuestra empresa</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-equipo">Nuestro equipo</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-mision-submenu">Nuestra misión</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-vision-submenu">Nuestra visión</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-button">Ventajas</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="submenu-item" data-target="contenido-ventajas-competencia">Ventajas ante la principal competencia</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-mercado">Mercado</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-competencia-region">Competencia en la región</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-button">Análisis</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="submenu-item" data-target="contenido-oferta">Análisis básico de oferta</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-demanda">Análisis básico de demanda</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-button">Marketing</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="submenu-item" data-target="contenido-estrategia-marketing">Estrategia</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-productos-marketing">Productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-button">Administrativo</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="submenu-item" data-target="contenido-propuesta-valor">Propuesta de valor</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-financiamiento">Financiamiento</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-analisis-financiero">Análisis financiero</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-analisis-foda">Análisis FODA</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-impacto-ambiental">Impacto ambiental</a></li>
+                            <li><a href="#" class="submenu-item" data-target="contenido-conclusion">Conclusión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="contenido-inicio" class="content-section active">
+                <div class="seccion-titulo">
+                    <h2>¡Bienvenido a Ecolibreta!</h2>
+                </div>
+                <p>Nos complace presentarte nuestro proyecto, *Ecolibreta*, una iniciativa comprometida con la sustentabilidad y la creatividad. En un mundo donde los recursos naturales son cada vez más valiosos, hemos creado una propuesta que transforma el papel reciclado en libretas únicas y funcionales.</p>
+                <p>Nuestra misión es doble: por un lado, ofrecemos productos de papelería de alta calidad, hechos con procesos artesanales y sostenibles; por otro, buscamos generar conciencia sobre la importancia del reciclaje y el consumo responsable. Cada libreta de Ecolibreta es un paso hacia un futuro más verde y un recordatorio de que la innovación puede ir de la mano con el respeto al medio ambiente.</p>
+                <p>Te invitamos a explorar las diferentes secciones de nuestro sitio para conocer más sobre nuestra empresa, nuestro equipo, las ventajas que ofrecemos y cómo, a través de nuestro trabajo, contribuimos a un impacto positivo en la comunidad y el planeta.</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="img/eco_libreta_main.png" alt="Ecolibreta: Libretas Ecológicas" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #555; margin-top: 10px;">Creando un futuro más verde, una libreta a la vez.</p>
+                </div>
+            </div>
+
+            <div id="contenido-empresa" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Nuestra empresa</h2>
+                </div>
+                <p>Ecolibreta es una empresa papelera comprometida con la sustentabilidad y dedicada a la fabricación de libretas haciendo uso de papel reciclado. Nuestra labor está orientada a reducir el impacto ambiental que causa la tala masiva de árboles para crear hojas de papel.</p>
+
+	<p><b>Datos generales</b></p>
+<p><b>Tamaño:</b> Microempresa</p>
+    	<p><b>Giro:</b> industrial y comercial (industria papelera)</p>
+    		<p><b>Ubicación:</b> C. José María Morelos 32, Centro, Zona Centro, 76500 Cadereyta de Montes, Qro.</p>
+    <p><b>Empleados:</b> 9 empleados (a generar: 30)</p>
+    	<p><b>Salario promedio:</b> 3,000 – 6,000 pesos mexicanos (estos siendo variables dependiendo el área y función de 		cada empleado)</p>
+    	<p><b>Fecha de constitución:</b> [Aquí puedes añadir la fecha cuando la tengas]</p>
+    			<p><b>Nombre del representante:</b> Monserrat Guerrero Muñoz</p>
+
+	<p class="espacio-extra"></p>
+		<p class="centrar-texto"><b>Empresario-empresa</b></p>
+	    <p class="espacio-extra"></p>
+
+	<p>Somos un grupo de jóvenes estudiantes pertenecientes al EMSaD 23 en la localidad de Sombrerete, comprometidos 		con nuestro emprendimiento y la sustentabilidad. Nuestro objetivo es desarrollar un negocio de libretas 	ecológicas combinando la creatividad, la conciencia ambiental y la responsabilidad social</p>
+			<p>Ecolibreta es una empresa papelera comprometida con la sustentabilidad y dedicada a la 			fabricación de libretas haciendo uso de papel reciclado. Nuestra labor está orientada a reducir el impacto 	ambiental que causa la tala masiva de árboles para crear hojas de papel.</p>
+
+
+            </div>
+
+            <div id="contenido-equipo" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Nuestro equipo</h2>
+                </div>
+                <p><b>Somos un grupo de jóvenes estudiantes</b> pertenecientes al EMSaD 23 en la localidad de Sombrerete, 			comprometidos con nuestro emprendimiento y la sustentabilidad. Nuestro objetivo es desarrollar un 		negocio de libretas ecológicas combinando la creatividad, la conciencia ambiental y la responsabilidad 		social.</p>
+        	        <p><b>Nuestro equipo</b></p>
+                <p><b>Monserrat Guerrero Muñoz</b>, es una persona con una inteligencia destacada, capaz de analizar y resolver problemas de manera eficiente (destacando sobre todo en el ámbito de las matemáticas), su creatividad le ha permitido abordar desafíos con soluciones innovadoras, su habilidad en la oratoria le permiten expresarse de forma clara y eficiente en distintos entornos.</p>
+                <p>Es una persona altamente leal y honesta, lo que la convierte en una persona confiable, su espíritu competitivo la impulsa a superarse constantemente, afrontando diversos retos con valentía. A pesar de su ambición, sigue manteniendo una actitud humilde y respetuosa. Su responsabilidad y perseverancia garantizan el cumplimiento de sus compromisos, su carácter le permite tomar decisiones sensatas y logra mantener la calma en situaciones de presión.</p>
+                <p><b>Jocelyn Martínez Pérez</b>, Una persona destacada que combina la ética con una mentalidad positiva, se caracteriza por su integridad, su honestidad y una fuerte responsabilidad y compromiso por su trabajo, es sincera, perseverante y determinada, siendo gracias a estas características que logra alcanzar sus objetivos.</p>
+                <p>Su actitud positiva y resiliente hacen de ella un elemento valioso para el equipo</p>
+                <p><b>Maria Jose Pérez Pérez</b>, Una persona con grandes habilidades en oratoria, lo que le permite expresarse con claridad y seguridad en distintos entornos, su buena memoria le facilita el aprendizaje y la retención de información, tiene conocimientos en tecnología y redes sociales más allá de lo básico, lo que le permite manejar estas herramientas con facilidad.</p>
+                <p>Habla inglés como segunda lengua a un nivel competente, lo que igualmente le ayuda a comunicarse con fluidez en diferentes situaciones. Sabe tomar el rol de liderazgo cuando la situación se requiere, sabiendo guiar y organizar a un equipo para cumplir los objetivos propuestos.</p>
+                <p><b>Marely Ramírez Ramírez</b>, es una persona sociable y creativa, con una gran ambición por alcanzar sus objetivos y superar sus propios límites. A pesar de su determinación, es humilde y sabe reconocer el valor de los demás. Se caracteriza por ser confiable, paciente y honesta, siempre estará dispuesta a escuchar a aquellos que la rodean.</p>
+                <p>Su naturaleza empática y amable le permite conectar con los demás de manera genuina y su lealtad es inquebrantable. Estas cualidades le permiten mantener relaciones sólidas y constructivas y la impulsan a ser la mejor versión de sí misma.</p>
+                <p><b>Olivia Fortanell Ortiz</b>, es una profesional destacada, que combina una personalidad brillante con una mente curiosa y una capacidad excepcional para aprender y crecer. Se distingue por su empatía y disposición por ayudar a los demás. Su entusiasmo y energía positiva la convierten en una persona atractiva y motivadora.</p>
+                <p>Además, es una gran apasionada de los deportes (destacando especialmente su afición al futbol) por lo que además de promover un estilo de vida saludable, también se dedica a aportar un aura única y valiosa en su campo de trabajo</p>
+                <p><b>Gael Martínez Reséndiz</b>, es una persona alegre, amable y respetuosa con una gran ética laboral. Se caracteriza por ser una persona responsable, empático, ético y honesto. Posee habilidades en comunicación, trabajo en equipo y responsabilidad. Valora el respeto, la honestidad y la empatía. </p>
+                <p>Disfruta de realizar actividades físicas, de la lectura y de conectar con los demás.</p>
+                <p><b>Kevin Martínez Reséndiz</b>, es una persona altamente comprometida con su trabajo, asume sus responsabilidades con seriedad y dedicación. Su honestidad y transparencia en cada acción generan confianza en su entorno, consolidándolo como una persona íntegra y confiable</p>
+                <p>Su espíritu solidario le impulsa a apoyar y colaborar con quienes le rodean, fomentando un ambiente de cooperación y respaldo. Además, demuestra un gran empeño en aquellas actividades por las cuales siente una verdadera pasión, destacándose por su determinación y esfuerzo constante</p>
+                <p>La lealtad es un valor fundamental en su carácter, reflejado en su compromiso con las personas y en los proyectos en los que participa, garantizando su fidelidad y sentido de pertenencia en cualquier ámbito</p>
+                <p><b>Emanuel Rodríguez Contreras</b>, es una persona entregada a su trabajo, siempre da lo mejor de si en cada tarea que asume, demostrando un alto nivel de dedicasion en cada tarea asumida. Su lealtad se refleja en su compromiso con su equipo y sus objetivos, manteniendo una relación de confianza y apoyo mutuo.</p>
+                <p>Es sincero y claro en su comunicación, lo que le permite generar relaciones auténticas y respetuosas. Además, su amabilidad y capacidad para relacionarse con los demás lo convierten en una persona sociable y accesible, capaz de crear vínculos sólidos en su entorno.</p>
+                <p>Su valentía y fortaleza le permiten enfrentar desafíos con determinación y coraje, sin rendirse ante las dificultades. Como trabajador incansable, se destaca por su ética y responsabilidad, siendo un pilar en cualquier proyecto o equipo en el que se involucre</p>
+                <p><b>Oswaldo Gonzales Martínez</b>, es una persona fuerte, con una determinación inquebrantable. En el ámbito del futbol, es destacado por mostrar su pasión en cada jugada, demostrando que no sabe cuán rendirse. Su esfuerzo y disciplina le hacen destacar, ya que se esfuerza para conseguir el éxito que sabe perfectamente que no llegara solo</p>
+            </div>
+
+            <div id="contenido-mision-submenu" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Nuestra misión</h2>
+                </div>
+                <p>Ecolibreta tiene como misión crear productos de papelería ecológicos y funcionales mediante procesos artesanales y sustentables, promoviendo el reciclaje y la conciencia ambiental a través de la creatividad, la educación y el diseño responsable.</p>
+            </div>
+
+            <div id="contenido-vision-submenu" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Nuestra visión</h2>
+                </div>
+                <p>Ser una empresa referente en la producción artesanal de libretas ecológicas en el estado de Querétaro, reconocida por su compromiso con el medio ambiente, la innovación social y crear un impacto positivo en la comunidad, fomentando una cultura de consumo consciente y sostenible.</p>
+            </div>
+
+            <div id="contenido-ventajas-competencia" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Ventajas ante la principal competencia</h2>
+            </div>
+
+<p>1.	Producción artesanal y local: Hecho a mano, con control de calidad directo y cercano al cliente.</p>
+
+<p>2.	Diseños personalizados: Libretas únicas y adaptadas a las preferencias del cliente.</p>
+
+<p>3.	Enfoque educativo y comunitario: Talleres y campañas para promover la conciencia ambiental.</p>
+
+<p>4.	Atención personalizada: Trato directo y cordial, creando relaciones de confianza.</p>
+
+<p>5.	Sustentabilidad real: Uso de materiales reciclados y procesos ecológicos auténticos.</p>
+            </div>
+
+            <div id="contenido-instalaciones" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Nuestras Instalaciones</h2>
+                </div>
+                
+<p>Por el momento trabajamos de forma casera con herramientas básicas: usamos una laptop, tableta y teléfonos para diseño y gestión, además de licuadoras, marcos y materiales reciclados para fabricar el papel. También contamos con insumos como papel viejo, revistas y herramientas manuales para armar las libretas. Como parte de un plan a futuro, buscamos rentar un pequeño local que funcione como tienda, taller y espacio de producción.</p>
+
+            </div>
+
+            <div id="contenido-mercado" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Información del producto o servicio</h2>
+                </div>
+<p>Ecolibreta ofrece libretas ecológicas hechas a mano con papel reciclado. Estas son producidas en diferentes formatos: libreta tipo francesa, profesionales, blocs de notas y libretas de dibujo. Cada uno de los modelos está pensado para un público especifico con diseños que van desde portadas brillantes para niños hasta estilos minimalistas para adultos</p>
+
+<div class="seccion-titulo">
+                    <h2>Mercado meta</h2>
+                </div>
+
+<p>Nos enfocamos en jóvenes y estudiantes de entre 15 a 29 años, ya que son quienes más consumen artículos escolares y muestran interés por productos ecológicos y personalizados. Ofrecemos libretas con distintos diseños y tamaños para adaptarnos a sus gustos: desde portadas coloridas para niños y adolescentes, hasta estilos más neutros o minimalistas para jóvenes y adultos.</p>
+            </div>
+
+            <div id="contenido-competencia-region" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Competencia en la Región</h2>
+                </div>
+
+                <dl>
+                    <dt><h3>Dot Factory</h3></dt>
+                    <dd><b>Ubicación:</b> Querétaro, Qro. Empresa local que fabrica libretas ecológicas personalizadas para promociones.</dd>
+                    <dd><b>Ventajas:</b> Ubicación local, pedidos desde pocas piezas y opciones de personalización.</dd>
+                    <dd><b>Desventaja:</b> Sus diseños están pensados principalmente para empresas como artículos promocionales, no tanto para consumidores que buscan estilo o diseño único.</dd>
+
+                    <dt><h3>Scribe (BioPappel)</h3></dt>
+                    <dd><b>Ubicación:</b> San Juan del Río, Querétaro. Es una de las marcas más reconocidas a nivel nacional, con una producción masiva de cuadernos.</dd>
+                    <dd><b>Ventajas:</b> Posicionamiento sólido en el mercado, economía de escala, distribución nacional y productos hechos con papel reciclado.</dd>
+                    <dd><b>Desventaja:</b> No ofrece productos personalizados ni se enfoca en mercados pequeños o artesanales; es una marca comercial que prioriza volumen sobre detalle.</dd>
+
+                    <dt><h3>Greenpaper</h3></dt>
+                    <dd><b>Ubicación:</b> Querétaro, Qro. Productora de papel reciclado utilizada por otras empresas para fabricar productos ecológicos.</dd>
+                    <dd><b>Ventaja competitiva:</b> Su proveedor local de papel reciclado cuenta con enfoque 100% sustentable.</dd>
+                    <dd><b>Desventaja:</b> No vende libretas directamente al consumidor; su enfoque es más industrial y de materias primas.</dd>
+
+                    <dt><h3>Branddu México</h3></dt>
+                    <dd><b>Ubicación:</b> Ciudad de México. Empresa enfocada en libretas ecológicas para promociones corporativas.</dd>
+                    <dd><b>Ventajas:</b> Diseños modernos, gran variedad de modelos y opciones de personalización.</dd>
+                    <dd><b>Desventaja:</b> No tiene presencia en Querétaro; sus productos están dirigidos más al sector empresarial que al mercado artesanal o de consumidor directo.</dd>
+                </dl>
+                <p>Analizando esta competencia llegamos a la conclusión de que implementaremos cada desventaja que se tiene analizada para lograr una mejor calidad y así obtener mayores consumidores, satisfaciendo sus necesidades como lo es una libreta de buena calidad con un diseño único para diferentes enfoques industrial y un consumidor directo, al igual que una entrega rápida y segura.</p>
+            </div>
+
+            <div id="contenido-oferta" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Análisis básico de oferta</h2>
+                </div>
+                <p>En el municipio de Cadereyta de Montes, contamos con al menos 4 competidores directos que ofrecen productos similares, principalmente papelerías locales y pequeños comercios que distribuyen libretas convencionales y artículos escolares. Estos establecimientos manejan precios accesibles, con libretas tradicionales que oscilan entre los $25 y $60 pesos, dependiendo del tamaño, tipo de encuadernado y diseño.</p>
+
+                <p>Nuestra propuesta se distingue por ofrecer libretas ecológicas con diseños personalizados, pensados para diferentes públicos (niños, adolescentes y adultos), así como kits promocionales que incluyen productos complementarios, lo cual genera un valor agregado en cada compra. Además, utilizamos materiales reciclados y empaques amigables con el medio ambiente, lo que refuerza nuestro enfoque en la sostenibilidad y la diferenciación frente a la competencia.</p>
+            </div>
+
+            <div id="contenido-demanda" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Análisis básico de demanda</h2>
+                </div>
+                <p>En Cadereyta de Montes hay 69,075 habitantes. Se estima que 6,907 personas estarían interesadas en comprar libretas ecológicas. Si cada una compra 2 al mes, se venderían unas 13,814 libretas ecológicas mensuales. Por lo tanto, se estima tener entre 207,210 a 1,795,820 de ventas al mes.</p>
+                <p>Aunque en el estado de Querétaro existen algunas marcas reconocidas que ofrecen productos ecológicos, la mayoría de estas llevan un proceso industrial. Nuestra ventaja radica en el proceso artesanal, la cercanía con el cliente, la personalización y la promoción activa de la conciencia ecológica mediante talleres y campañas.</p>
+            </div>
+
+            <div id="contenido-estrategia-marketing" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Estrategia de Marketing</h2>
+                </div>
+                <ul>
+                    <li><b>Promoción por redes sociales:</b> Utilizaremos plataformas como Instagram, TikTok y Facebook con reels y contenido creativo. Consideraremos la colaboración con creadores de contenido, a quienes se les hará llegar productos de nuestra marca para obtener promoción.</li>
+                    <li><b>Venta directa:</b> Realizaremos ventas en ferias escolares y culturales.</li>
+                    <li><b>Promoción de talleres:</b> Ofreceremos talleres de reciclaje como estrategia de posicionamiento de la marca.</li>
+                    <li><b>Ofertas y promociones:</b> Implementaremos ofertas por donar papel y cartón reciclado, o al comprar ciertos productos (ejemplo: "en la compra de 2 libretas, obtén un bloc de notas a mitad de precio").</li>
+                </ul>
+            </div>
+
+          <div id="contenido-productos-marketing" class="content-section">
+    <div class="seccion-titulo">
+        <h2>Nuestros Productos o servicios</h2>
+    </div>
+
+    <div class="producto-item">
+        <img src="img/cup.png" alt="Cuadernos Ecológicos" class="producto-imagen">
+        <div class="producto-detalle">
+            <h3><strong>Cuadernos</strong></h3>
+            <ul>
+                <li>Tamaño profesional</li>
+                <li>70 hojas: <strong>$35 MX</strong></li>
+                <li>80 hojas: <strong>$40 MX</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="separador-productos">
+
+    <div class="producto-item">
+        <img src="img/lif.png" alt="Libreta Francesa / Agenda Ecológica" class="producto-imagen">
+        <div class="producto-detalle">
+            <h3><strong>Libreta Francesa / Agenda</strong></h3>
+            <ul>
+                <li>Cuadro grande</li>
+                <li>50 hojas: <strong>$25 MX</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="separador-productos">
+
+    <div class="producto-item">
+        <img src="img/blo.png" alt="Bloc de Notas Ecológico" class="producto-imagen">
+        <div class="producto-detalle">
+            <h3><strong>Bloc de Notas</strong></h3>
+            <ul>
+                <li>25 hojas: <strong>$50 MX</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="separador-productos">
+
+    <div class="producto-item">
+        <img src="img/cud.png" alt="Cuaderno de Dibujo Ecológico" class="producto-imagen">
+        <div class="producto-detalle">
+            <h3><strong>Cuaderno de Dibujo</strong></h3>
+            <ul>
+                <li>70 hojas: <strong>$130 MX</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="separador-productos">
+
+    <div class="producto-item">
+        <img src="img/cpe.png" alt="Cuadernos Personalizados Ecológicos" class="producto-imagen">
+        <div class="producto-detalle">
+            <h3><strong>Cuadernos Personalizados</strong></h3>
+            <ul>
+                <li>70 hojas: <strong>$75 MX</strong></li>
+                <li>80 hojas: <strong>$80 MX</strong></li>
+                <li>(Costo añadido por la mano de obra)</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="separador-productos">
+
+    <div class="producto-item">
+        <img src="img/cep.png" alt="Separadores Ecológicos" class="producto-imagen">
+        <div class="producto-detalle">
+            <h3><strong>Separadores</strong></h3>
+            <ul>
+                <li><strong>$10 - $15 MX</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="separador-productos">
+</div>
+
+            <div id="contenido-propuesta-valor" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Propuesta de valor</h2>
+                </div>
+
+                <div class="tg-wrap-propuesta-valor">
+                  <table class="tg-propuesta-valor">
+                    <thead>
+                      <tr>
+                        <th class="tg-nrix">Oportunidad</th>
+                        <th class="tg-nrix">Factibilidad</th>
+                        <th class="tg-nrix">Propuesta única y distintiva</th>
+                        <th class="tg-nrix">Impacto en el mercado</th>
+                        <th class="tg-nrix">Impacto en el consumidor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-cly1">·         Mercado consciente del medio ambiente en crecimiento</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Nueve socios fundadores</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Libretas ecológicas elaboradas con papel reciclado&nbsp;&nbsp;&nbsp;y materiales sustentables</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Baja competencia directa en el sector ecológico&nbsp;&nbsp;&nbsp;local</td>
+                        <td class="tg-0lax">Producto útil, atractivo y con causa</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1">·         Tamaño del mercado local: 69,075 habitantes aprox</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Apoyo de proveedores locales</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Diseño artesanal, personalizable, con opción a&nbsp;&nbsp;&nbsp;pastas personalizadas</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Atractivo para segmentos estudiantiles y jóvenes&nbsp;&nbsp;&nbsp;adultos que valoran la personalización</td>
+                        <td class="tg-0lax">Genera sentido de pertenencia y promueve el consumo responsable</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1">·         Se espera alcanzar al menos 6,907 clientes potenciales</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Materias primas recicladas y biodegradables</td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Enfoque educativo, ecológico y en sintonía con las&nbsp;&nbsp;&nbsp;tendencias actuales </td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Posibilidad de expansión a otros municipios o&nbsp;&nbsp;&nbsp;venta en línea</td>
+                        <td class="tg-0lax">Fomenta la educación ambiental y el apoyo al comercio local</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1">·         Potencial en escuelas, universidades, ferias artesanales y&nbsp;&nbsp;&nbsp;turismo</td>
+                        <td class="tg-0lax"> </td>
+                        <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Marca joven, auténtica y de impacto</td>
+                        <td class="tg-0lax"> </td>
+                        <td class="tg-0lax"> </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1">·         Rentabilidad esperada: moderada con alta escalabilidad</td>
+                        <td class="tg-0lax"> </td>
+                        <td class="tg-0lax"> </td>
+                        <td class="tg-0lax"> </td>
+                        <td class="tg-0lax"> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+	<p class="espacio-extra"></p>
+                <div class="tg-wrap-propuesta-valor-2">
+                  <table class="tg-propuesta-valor-2">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br><span style="color:#0070C0">Deseabilidad</span>&nbsp;&nbsp;&nbsp;</th>
+                        <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br><span style="color:#0070C0">Uso</span>&nbsp;&nbsp;&nbsp;</th>
+                        <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br><span style="color:#0070C0">Recomendación</span>&nbsp;&nbsp;&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>*El concepto&nbsp;&nbsp;&nbsp;de las libretas ecológicas y personalizadas resuena con el interés del&nbsp;&nbsp;&nbsp;segmento juvenil por la sostenibilidad y originalidad<br>&nbsp;&nbsp;&nbsp;<br>*Se observa&nbsp;&nbsp;&nbsp;preferencia por productos sustentables y personalizados<br>&nbsp;&nbsp;&nbsp;<br>*Diseño&nbsp;&nbsp;&nbsp;atractivo, funcional y con identidad única&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>*se&nbsp;&nbsp;&nbsp;utiliza para estudio, trabajo, creatividad o como regalo<br>&nbsp;&nbsp;&nbsp;<br>*producto&nbsp;&nbsp;&nbsp;de uso cotidiano con gran valor simbólico y ecológico<br>&nbsp;&nbsp;&nbsp;<br>*el&nbsp;&nbsp;&nbsp;consumidor puede valorar la combinación de sostenibilidad y personalización&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>*la&nbsp;&nbsp;&nbsp;experiencia de compra, el diseño innovador y el mensaje ecológico puede&nbsp;&nbsp;&nbsp;motivar a recomendar la marca<br>&nbsp;&nbsp;&nbsp;<br>*las redes&nbsp;&nbsp;&nbsp;sociales serán claves para difundir este proyecto<br>&nbsp;&nbsp;&nbsp;<br>*participación&nbsp;&nbsp;&nbsp;en ferias locales y estrategias de marketing ayudaran al reconocimiento de la&nbsp;&nbsp;&nbsp;marca&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+
+            <div id="contenido-operacion-produccion" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Operación/Producción</h2>
+                </div>
+                <ol>
+                    <li><b>Recepción de materiales:</b> Se reciben y almacenan los insumos ecológicos (papel reciclado, cartón, espirales, vinil, pegamento, etc.).</li>
+                    <li><b>Diseño y personalización:</b> Se realizan diseños en programas gratuitos (Canva, Inkscape, etc.) y se preparan portadas personalizadas según la preferencia del cliente (se imprime o se elabora manualmente el diseño seleccionado).</li>
+                    <li><b>Armado de libretas:</b> Se corta el papel al tamaño requerido, se perfora manualmente, se coloca el espiral y se ensambla (tapa frontal y trasera, y hojas).</li>
+                    <li><b>Revisión de calidad:</b> Se verifica que cada libreta cumpla con los estándares de calidad y se corrigen o retiran los posibles defectos.</li>
+                    <li><b>Empaque y entrega:</b> Se empacan las libretas utilizando materiales reciclados, se distribuyen a puntos de venta como escuelas, ferias, oficinas o mediante pedidos a través de redes sociales.</li>
+                </ol>
+            </div>
+            
+            <div id="contenido-capacidad" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Capacidad Instalada</h2>
+                </div>
+                <h3>Infraestructura inicial</h3>
+                <ul>
+                    <li><b>Herramientas y equipos básicos:</b> perforadora manual, engrapadora, guillotina de papel, etc.</li>
+                    <li><b>Área de trabajo</b> con mesa adecuada y espacio de almacén para insumos.</li>
+                    <li><b>Equipo de diseño gráfico básico</b> que incluye computadora con acceso a programas gratuitos de diseño.</li>
+                </ul>
+                <div class="seccion-titulo">
+                    <h2>Capacidad de Producciòn</h2>
+                </div>
+                <p>Con la infraestructura inicial se estima una producción de entre 10 a 45 libretas personalizadas por día, dependiendo del tamaño, complejidad del diseño y número de personal disponible</p> 
+
+            </div>
+
+            <div id="contenido-inversion-inicial" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Inversión inicial</h2>
+                </div>
+                <p>Se estima una inversión inicial de aproximadamente *$18,000 a $25,000* que será destinada a:</p>
+                <ul>
+                    <li>*Compra de materiales ecológicos:* papel en recicladoras, cartón, espirales, etc.</li>
+                    <li>*Herramientas básicas:* perforadora manual, tijeras, reglas, engrapadoras.</li>
+                    <li>*Insumos artesanales para la personalización:* vinil, sellos, pinturas.</li>
+                    <li>*Diseño gráfico e impresión de etiquetas.*</li>
+                    <li>*Empaque básico y paquetería inicial.*</li>
+                </ul>
+            </div>
+
+            <div id="contenido-financiamiento" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Financiamiento</h2>
+                </div>
+                <p>El capital será cubierto a través de aportaciones entre los nueve socios, rifas escolares y apoyo familiar</p>
+            </div>
+
+            <div id="contenido-proveedores" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Proveedores</h2>
+                </div>
+                <p>Se considerarán proveedores *locales y accesibles* como:</p>
+                <ul>
+                    <li>*Papelerías* de la zona.</li>
+                    <li>*Recicladoras* de papel y cartón.</li>
+                    <li>*Proveedores en línea* de material ecológico artesanal (como Mercado Libre o redes de emprendedores).</li>
+                </ul>
+            </div>
+
+            <div id="contenido-analisis-financiero" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Análisis financiero</h2>
+                </div>
+			<p>Costos Fijos:</p>
+                <div class="tg-wrap-financiero-1">
+                  <table class="tg-financiero-1">
+                    <thead>
+                      <tr>
+                        <th class="tg-baqh">   <br><span style="font-weight:bold">Concepto   </span></th>
+                        <th class="tg-baqh">   <br><span style="font-weight:bold">Costo mensual   </span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Renta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$4,000&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Servicios&nbsp;&nbsp;&nbsp;(agua, luz, internet, etc.)&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$1,500 - $2,000&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Publicidad&nbsp;&nbsp;&nbsp;en redes sociales&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$800 - $1,300&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Sueldo&nbsp;&nbsp;&nbsp;base (nueve empleados)&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$40,000 - $45,000&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Suma&nbsp;&nbsp;&nbsp;total&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$51,300&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+<br>
+			<p>Costos Variables:</p>
+                <br> <div class="tg-wrap-financiero-2">
+                  <table class="tg-financiero-2">
+                    <thead>
+                      <tr>
+                        <th class="tg-amwm">   <br>Concepto   </th>
+                        <th class="tg-amwm">&nbsp;&nbsp;&nbsp;<br>Costo mensual&nbsp;&nbsp;&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Material reciclado&nbsp;&nbsp;&nbsp;(pegamento, cartón, hilo, tintas)&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$3,000&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Empaque ecológico&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$1,000&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Reposición de&nbsp;&nbsp;&nbsp;herramientas y mantenimiento&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$1,500&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>Total&nbsp;&nbsp;&nbsp;</td>
+                        <td class="tg-baqh">&nbsp;&nbsp;&nbsp;<br>$5,500&nbsp;&nbsp;&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="seccion-titulo">
+                    <h2>Punto de equilibrio</h2>
+                </div>
+                <p><b>Punto de equilibrio mensual</b>: costos fijos/ (precio promedio-costos variables por unidad)</p>
+            </div>
+
+            <div id="contenido-analisis-foda" class="content-section">
+            <div class="seccion-titulo">
+                <h2>Análisis FODA</h2>
+            </div>
+            <div class="tg-wrap">
+              <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="tg-1wig">Fortalezas </th>
+                    <th class="tg-1wig">Debilidades</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-cly1">·         Producción artesanal y personalizada</td>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Somos nuevos en el mercado</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-cly1">·         Compromiso ambiental real</td>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Capacidad limitada inicial</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-cly1">·         Equipo motivado</td>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Falta de maquinaria avanzada</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Buen manejo de las redes sociales</td>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Inversión inicial limitada </td>
+                  </tr>
+                  <tr>
+                    <td class="tg-yla0">Oportunidades</td>
+                    <td class="tg-yla0">Amenazas</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-cly1">·         Alta conciencia ecológica</td>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Competencia con mayor producción</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-cly1">·         Tendencia a productos sostenibles</td>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Aumento en precios de materiales </td>
+                  </tr>
+                  <tr>
+                    <td class="tg-cly1">·         Posibilidad de talleres y expansión</td>
+                    <td class="tg-cly1">·        &nbsp;&nbsp;&nbsp;Clientes que no valoren lo artesanal</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+
+           <div id="contenido-impacto-ambiental" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Impacto ambiental</h2>
+                </div>
+                <p>Ecolibreta busca tener un impacto ambiental positivo mediante:</p>
+                <ul>
+                    <li>Uso de papel 100% reciclado.</li>
+                    <li>Evitando el uso de materiales plásticos o contaminantes.</li>
+                    <li>Promoción de talleres de reciclaje.</li>
+                    <li>Cero uso de desechables.</li>
+                </ul>
+            </div>
+
+<div id="contenido-marco-legal" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Marco legal</h2>
+                </div>
+                <ul>
+                    <li><b>Constitución legal:</b> se realizará como persona física con actividad empresarial.</li>
+                    <li><b>Trámites:</b> registro ante el SAT como persona física con actividad empresarial, registro municipal del negocio, registro de marca en el IMPI.</li>
+                    <li><b>Régimen fiscal:</b> Régimen de Incorporación Fiscal (RIF) – jóvenes emprendedores.</li>
+                    <li><b>Contrato laboral:</b> salario base, aguinaldo y vacaciones conforme a la ley, apoyo con transporte y alimentos, horario flexible para estudiantes, IMSS y prestaciones de ley conforme a crecimiento del negocio.</li>
+                </ul>
+            </div>
+
+            <div id="contenido-tecnologia" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Tecnología</h2>
+                </div>
+                <ul>
+                    <li>Uso de herramientas básicas de diseño (Canva, Inkscape, PowerPoint, etc.)</li>
+                    <li>Laptop y tableta para diseño, gestión y redes sociales</li>
+                    <li>Software gratuito de gestión y contabilidad (Excel)</li>
+                    <li>Equipos para triturado y secado del papel</li>
+                    <li>Redes sociales como canal de marketing principal</li>
+                </ul>
+            </div>
+
+            <div id="contenido-conclusion" class="content-section">
+                <div class="seccion-titulo">
+                    <h2>Conclusión</h2>
+                </div>
+                <p>Ecolibreta representa una propuesta de valor sustentable, viable y con impacto real. Buscamos generar empleo local, fomentar la cultura ambiental y ofrecer productos artesanales con sentido. Nuestra meta es posicionarnos en el mercado local y expandirnos a través de tiendas físicas y digitales, para así continuar promoviendo la creatividad y el consumo responsables.</p>
+
+<p>El emprendimiento tiene potencial para crear más de 30 empleos directos en su fase de expansión y muchos indirectos gracias a las alianzas con proveedores, distribuidores y colaboradores 
+</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 Ecolibreta - Todos los derechos reservados</p>
+    <nav>
+        <ul>
+            <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+            <li><a href="/terminos-condiciones">Términos y Condiciones</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="social-links">
+        <a href="https://facebook.com/ecolibreta" target="_blank">Facebook</a>
+        <a href="https://instagram.com/ecolibreta" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
