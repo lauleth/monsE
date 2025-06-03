@@ -1,0 +1,487 @@
+/* ¡IMPORTANTE! Asegúrate de tener esta línea en el <head> de tu HTML: */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el footer esté siempre en la parte inferior */
+    line-height: 1.7;
+    background-color: #f9f9f9; /* Fondo general más suave */
+    color: #333; /* Color de texto general más oscuro para mejor contraste */
+}
+
+header {
+    background-color: #4CAF50; /* Verde vibrante y natural */
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para el encabezado */
+
+    /* Nuevas propiedades para alinear el logo y el título */
+    display: flex; /* Convierte el header en un contenedor flex */
+    align-items: center; /* Centra verticalmente los elementos (logo y h1) */
+    justify-content: center; /* Centra horizontalmente los elementos en el header */
+    gap: 20px; /* Añade un espacio de 20px entre el logo y el h1 */
+}
+
+header img {
+    /* Estilos para tu logo */
+    max-width: 80px; /* Ajusta el tamaño máximo del logo. Prueba con 80px, 100px, etc. */
+    height: auto; /* Mantiene la proporción de la imagen */
+    /* Si el logo necesita estar más a la izquierda, podrías usar: */
+    /* margin-right: auto; o jugar con justify-content en el header */
+}
+
+header h1 {
+    margin: 0; /* Asegura que no haya márgenes adicionales que desplacen el h1 */
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    /* Si necesitas el h1 a la derecha y el logo a la izquierda, puedes usar: */
+    /* text-align: left; */
+}
+
+
+.seccion-titulo {
+    padding: 1.2em;
+    text-align: center;
+    background-color: #e8f5e9; /* Un verde muy claro para los títulos de sección */
+    border-bottom: 2px solid #a5d6a7; /* Borde inferior para destacar */
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.seccion-titulo h2 {
+    color: #2e7d32; /* Tono de verde más oscuro para el título */
+    margin: 0;
+    font-size: 1.8em;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px; /* Padding general para el main */
+}
+
+.columna-central {
+    background-color: #ffffff; /* Blanco puro para el contenido principal */
+    width: 100%;
+    padding: 20px; /* Padding interno para toda la columna central */
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 20px; /* Espacio entre los elementos principales */
+    box-sizing: border-box;
+    border-radius: 10px; /* Bordes redondeados para la columna central */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Sombra más pronunciada */
+}
+
+.espacio-extra {
+    margin-bottom: 2em;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+footer {
+    background-color: #212121; /* Gris muy oscuro, casi negro */
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+/* Estilos para el menú de navegación */
+.main-nav {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Fondo más claro para la navegación */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.menu-button {
+    display: block;
+    background-color: #66BB6A; /* Un verde medio para los botones */
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 25px; /* Botones más redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.menu-button:hover {
+    background-color: #388E3C; /* Verde más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #ffffff; /* Fondo blanco para el submenú */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15); /* Sombra más definida */
+    z-index: 10; /* Mayor z-index para asegurar que esté encima */
+    min-width: 180px;
+    border-radius: 8px;
+    display: none;
+    overflow: hidden; /* Para que los bordes redondeados se apliquen a los ítems */
+}
+
+.submenu-item {
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    color: #444; /* Color de texto más suave */
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.submenu-item:hover {
+    background-color: #e8f5e9; /* Fondo verde muy claro al pasar el ratón */
+    color: #2e7d32; /* Tono de verde más oscuro */
+}
+
+/* Clases para mostrar/ocultar los submenús con JavaScript */
+.menu-item.active .submenu {
+    display: block;
+}
+
+/* Estilos para los contenedores de contenido */
+.content-section {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 25px; /* Más padding para el contenido */
+    border: 1px solid #e0e0e0; /* Borde más suave */
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra sutil */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Para mostrar un contenido específico */
+.content-section.active {
+    display: block;
+}
+
+/* Estilos para los productos */
+.producto-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.producto-item img {
+    max-width: 120px; /* Tamaño fijo para las imágenes de producto */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.producto-detalle {
+    flex-grow: 1;
+}
+
+.producto-detalle h3 {
+    color: #2e7d32;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.separador-productos {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+
+---
+
+## Estilo Responsivo (Breakpoints Corregidos y Colores Adaptados)
+
+```css
+/* Estilos para pantallas más pequeñas (móviles hasta 768px) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px; /* Reduce el padding en móviles */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Reduce el tamaño del encabezado en móviles */
+    }
+
+    .columna-central {
+        padding: 15px; /* Ajusta el padding de la columna central */
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column; /* Apila los menús principales */
+        align-items: stretch; /* Estira los botones del menú al ancho completo */
+        gap: 5px; /* Ajusta el espacio entre los botones del menú en móvil */
+    }
+
+    .menu-item {
+        width: 100%; /* Ocupa todo el ancho para cada botón del menú */
+        text-align: center;
+    }
+
+    .menu-button {
+        width: 100%; /* El botón ocupa todo el ancho del li */
+        border-radius: 8px; /* Menos redondeado en móvil */
+        padding: 10px 15px;
+    }
+
+    .submenu {
+        position: static; /* Cambia a estático para que no se superponga y fluya con el documento */
+        width: 100%;
+        box-shadow: none; /* Quitamos la sombra */
+        border: none; /* Quitamos el borde */
+        background-color: #f0f0f0; /* Fondo más claro para el submenú en móvil */
+        border-radius: 0;
+        margin-top: 5px;
+    }
+
+    .submenu-item {
+        padding: 10px 15px;
+        background-color: #f0f0f0; /* Asegura un fondo uniforme en móvil */
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .submenu-item:last-child {
+        border-bottom: none;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+    .producto-item {
+        flex-direction: column; /* Apila imagen y detalle del producto */
+        text-align: center;
+        gap: 10px;
+    }
+    .producto-item img {
+        max-width: 100px;
+    }
+}
+
+/* Móviles pequeños y medianos (hasta 576px) */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5em; /* Un poco más pequeño para pantallas muy pequeñas */
+    }
+    .seccion-titulo h2 {
+        font-size: 1.5em;
+    }
+    .menu-button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+    .content-section {
+        padding: 10px; /* Reduce el padding de las secciones de contenido en móviles muy pequeños */
+    }
+}
+
+/* Tablets (modo retrato - de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .menu {
+        flex-direction: row; /* En tablets, los botones principales pueden ir en fila */
+        justify-content: space-around;
+    }
+    .menu-item {
+        width: auto;
+        flex-basis: auto;
+    }
+    .menu-button {
+        width: auto;
+        padding: 10px 15px;
+    }
+    .submenu {
+        position: absolute; /* Vuelve a la posición absoluta para submenús */
+        width: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border: 1px solid #e0e0e0;
+        margin-top: 0; /* Elimina el margen si lo pusiste para móviles */
+    }
+}
+
+/* Tablets (modo paisaje) y laptops pequeñas (de 769px a 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    main {
+        padding: 30px;
+    }
+    .columna-central {
+        gap: 25px;
+    }
+    .menu-button {
+        padding: 12px 20px;
+        font-size: 1.05em;
+    }
+}
+
+/* Desktops y laptops (a partir de 993px) */
+@media (min-width: 993px) {
+    main {
+        padding: 40px 60px;
+    }
+    .columna-central {
+        padding: 30px 40px;
+    }
+}
+
+/* Estilos para las tablas */
+.tg, .tg-propuesta-valor, .tg-propuesta-valor-2, .tg-financiero-1, .tg-financiero-2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px auto;
+    width: 100%; /* Asegura que la tabla ocupe el ancho disponible */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Sombra ligera para las tablas */
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen */
+}
+
+.tg td, .tg th,
+.tg-propuesta-valor td, .tg-propuesta-valor th,
+.tg-propuesta-valor-2 td, .tg-propuesta-valor-2 th,
+.tg-financiero-1 td, .tg-financiero-1 th,
+.tg-financiero-2 td, .tg-financiero-2 th {
+    border: 1px solid #e0e0e0; /* Borde más suave para las celdas */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    word-break: normal;
+    text-align: left; /* Alineación por defecto a la izquierda */
+    vertical-align: top;
+    background-color: white; /* Fondo blanco para las celdas de datos */
+}
+
+/* Encabezados de tabla */
+.tg th, .tg-propuesta-valor th, .tg-propuesta-valor-2 th, .tg-financiero-1 th, .tg-financiero-2 th {
+    background-color: #81C784; /* Un verde claro para los encabezados */
+    color: white;
+    font-weight: bold; /* Negrita para los encabezados */
+    text-align: center; /* Centra los encabezados de tabla */
+    padding: 12px 15px;
+    border-color: #66BB6A; /* Borde un poco más oscuro para los encabezados */
+}
+
+/* Alineaciones específicas que tenías */
+.tg .tg-cly1, .tg-propuesta-valor .tg-cly1, .tg-financiero-1 .tg-baqh, .tg-financiero-2 .tg-baqh {
+    text-align: left;
+    vertical-align: middle;
+}
+.tg .tg-1wig, .tg-propuesta-valor .tg-nrix, .tg-financiero-1 .tg-baqh, .tg-financiero-2 .tg-amwm {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+.tg .tg-yla0 {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+}
+.tg-propuesta-valor .tg-0lax, .tg-propuesta-valor-2 .tg-0lax {
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Responsividad de tablas - envoltura para scroll horizontal */
+.tg-wrap, .tg-wrap-propuesta-valor, .tg-wrap-propuesta-valor-2, .tg-wrap-financiero-1, .tg-wrap-financiero-2 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .tg, .tg-propuesta-valor, .tg-propuesta-valor-2, .tg-financiero-1, .tg-financiero-2 {
+        width: 100%; /* Asegura que la tabla intente usar todo el ancho disponible */
+        display: block; /* Permite que el overflow-x funcione */
+    }
+    .tg col, .tg-propuesta-valor col, .tg-propuesta-valor-2 col, .tg-financiero-1 col, .tg-financiero-2 col {
+        width: auto !important;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*accesibilidad y nuevo footer*/
+footer nav ul {
+    list-style: none; /* ¡Esto quita las viñetas! */
+    padding: 0;        /* ¡Esto quita el padding por defecto del navegador! */
+    margin: 0;         /* ¡Esto quita el margen por defecto del navegador! */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Si quieres un espacio entre los elementos del menú del footer */
+}
+footer nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Quitar subrayado */
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.social-links {
+    margin-top: 10px; /* Espacio entre los enlaces de navegación y los sociales */
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Suaviza el cambio de color al pasar el ratón */
+}
+
+.social-links a:hover {
+    color: #4CAF50; /* Un verde que combine con el resto de tu sitio */
+}
+a:focus,
+button:focus {
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+    box-shadow: 0 0 0 2px #4CAF50; /* Añade un estilo de enfoque personalizado */
+    /* O directamente outline: 2px solid #4CAF50; */
+}
