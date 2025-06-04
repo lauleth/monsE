@@ -23,7 +23,14 @@ header {
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para el encabezado */
 }
-
+header img {
+    height: 70px;     /* ¡AJUSTA ESTE VALOR! Prueba con 50px, 60px, 80px, etc. */
+    width: auto;      /* Mantiene la proporción original de la imagen */
+    display: block;   /* Importante para que funcionen los márgenes automáticos para centrar */
+    margin-left: auto;  /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+    margin-bottom: 15px; /* Espacio opcional debajo del logo y antes del H1 */
+}
 header h1 {
     margin: 0;
     font-size: 2.2em;
